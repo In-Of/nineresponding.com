@@ -219,3 +219,9 @@ a:hover { color: var(--amber); }
 /* знак службы в конце рассказа */
 .end-mark { display: flex; align-items: center; gap: 14px; }
 .end-mark .emblem { width: 48px; height: 48px; flex: none; }
+
+/* кошелёк */
+.wallet-box { margin: 24px 0; }
+.wallet-box .note { margin: 0 0 8px; }
+.wallet-box .copy { display: inline-block; font-size: 14px; padding: 9px 16px; margin: 12px 0; cursor: pointer; background: none; }
+.wallet-qr { width: 160px; height: 160px; margin-top: 8px; border-radius: 2px; }

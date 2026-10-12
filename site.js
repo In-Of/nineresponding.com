@@ -17,3 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
     el.textContent = "через " + days + " " + w;
   } else el.textContent = "in " + days + " days";
 });
+
+// Кнопка «скопировать адрес» на странице поддержки
+document.addEventListener("click", function (e) {
+  var b = e.target.closest("[data-copy]");
+  if (!b || !navigator.clipboard) return;
+  navigator.clipboard.writeText(document.getElementById(b.dataset.copy).textContent.trim()).then(function () {
+    b.textContent = b.dataset.done;
+  });
+});
