@@ -215,3 +215,7 @@ a:hover { color: var(--amber); }
 .clip .video { margin-top: 24px; }
 .game p { margin: 0 0 1em; }
 .game .btn { margin-top: 24px; }
+
+/* знак службы в конце рассказа */
+.end-mark { display: flex; align-items: center; gap: 14px; }
+.end-mark .emblem { width: 48px; height: 48px; flex: none; }
