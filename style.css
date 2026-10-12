@@ -207,3 +207,8 @@ a:hover { color: var(--amber); }
 .audio .label { margin-bottom: 8px; }
 .audio audio { width: 100%; display: block; }
 .audio .note { margin: 8px 0 0; }
+
+/* клип и страница игры */
+.clip .video { margin-top: 24px; }
+.game p { margin: 0 0 1em; }
+.game .btn { margin-top: 24px; }
