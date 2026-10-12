@@ -115,7 +115,9 @@ a:hover { color: var(--amber); }
 .page-title { font: 500 30px/1.15 var(--display); text-transform: uppercase; letter-spacing: .03em; margin: 32px 0 24px; }
 .cards, .news { list-style: none; margin: 0; padding: 0; }
 .card { border-top: 1px solid var(--line); }
-.card a { display: block; padding: 20px 0; color: inherit; text-decoration: none; }
+.card a { display: flex; gap: 16px; align-items: flex-start; padding: 20px 0; color: inherit; text-decoration: none; }
+.card-thumb { flex: none; width: 112px; height: 84px; object-fit: cover; border-radius: 2px; background: var(--bg-raised); }
+.card-text { min-width: 0; }
 .card a:hover .card-title { color: var(--amber); }
 .card .meta { margin: 0 0 6px; }
 .card-title { font: 500 24px/1.2 var(--display); text-transform: uppercase; letter-spacing: .02em; margin: 0 0 8px; }
@@ -167,6 +169,7 @@ a:hover { color: var(--amber); }
   .story-title { font-size: 44px; }
   .page-title { font-size: 36px; }
   .logline { font-size: 23px; }
+  .card-thumb { width: 160px; height: 120px; }
   .site-header { padding: 18px 24px; }
 }
 
