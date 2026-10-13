@@ -222,6 +222,9 @@ a:hover { color: var(--amber); }
 
 /* кошелёк */
 .wallet-box { margin: 24px 0; }
+.btn + .wallet-box { margin-top: 48px; }
+.wallet-title { font: 500 22px/1.2 var(--display); text-transform: uppercase; letter-spacing: .06em; color: var(--amber); margin: 0 0 16px; }
+.wallet-title::before { content: ""; display: block; width: 32px; border-top: 1px solid var(--amber-dim); margin-bottom: 14px; }
 .wallet-box .note { margin: 0 0 8px; }
 .wallet-box .copy { display: inline-block; font-size: 14px; padding: 9px 16px; margin: 12px 0; cursor: pointer; background: none; }
 .wallet-qr { width: 160px; height: 160px; margin-top: 8px; border-radius: 2px; }
