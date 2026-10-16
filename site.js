@@ -25,4 +25,13 @@ document.addEventListener("click", function (e) {
   navigator.clipboard.writeText(document.getElementById(b.dataset.copy).textContent.trim()).then(function () {
     b.textContent = b.dataset.done;
   });
+  goal("wallet_copy");
 });
+
+// Цели Метрики (только .ru, если счётчик задан в links.md)
+function goal(name) {
+  if (window.ym && window.ymId) window.ym(window.ymId, "reachGoal", name);
+}
+document.addEventListener("play", function (e) {
+  if (e.target.tagName === "AUDIO") goal("audio_play");
+}, true);
