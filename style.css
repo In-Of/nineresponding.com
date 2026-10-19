@@ -230,3 +230,5 @@ a:hover { color: var(--amber); }
 .wallet-box .note { margin: 0 0 8px; }
 .wallet-box .copy { display: inline-block; font-size: 14px; padding: 9px 16px; margin: 12px 0; cursor: pointer; background: none; }
 .wallet-qr { width: 160px; height: 160px; margin-top: 8px; border-radius: 2px; }
+.new-mark { color: var(--amber); }
+.cards + .next-story { border-top: 1px solid var(--line); padding-top: 20px; margin-top: 0; }
