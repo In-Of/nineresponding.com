@@ -102,6 +102,10 @@ a:hover { color: var(--amber); }
 .btn-primary:hover { background: #ffc66e; color: var(--on-amber); }
 .btn-secondary { border: 1px solid var(--amber-dim); color: var(--amber-dim); }
 .btn-secondary:hover { border-color: var(--amber); color: var(--amber); }
+.cta-demo { display: none; }
+.from-demo .cta-demo { display: block; }
+.from-demo .cta-default { display: none; }
+.quiet-row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: center; margin: 16px 0 0; }
 .quiet { font-family: var(--mono); font-size: 14px; color: var(--muted); }
 
 /* главная */
