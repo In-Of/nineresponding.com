@@ -35,3 +35,28 @@ function goal(name) {
 document.addEventListener("play", function (e) {
   if (e.target.tagName === "AUDIO") goal("audio_play");
 }, true);
+
+
+// Collapsible navigation keeps all links available when JavaScript is disabled.
+var menuToggle = document.querySelector(".menu-toggle");
+var siteNav = document.getElementById("site-nav");
+if (menuToggle && siteNav) {
+  menuToggle.hidden = false;
+  document.documentElement.classList.add("menu-ready");
+  menuToggle.addEventListener("click", function () {
+    var open = menuToggle.getAttribute("aria-expanded") !== "true";
+    menuToggle.setAttribute("aria-expanded", String(open));
+    siteNav.classList.toggle("is-open", open);
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") {
+      menuToggle.setAttribute("aria-expanded", "false");
+      siteNav.classList.remove("is-open");
+      menuToggle.focus();
+    }
+  });
+}
+
+if (new URLSearchParams(location.search).get("from") === "demo") {
+  document.documentElement.classList.add("from-demo");
+}
